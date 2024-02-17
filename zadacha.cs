@@ -8,5 +8,14 @@ class Program
         
         string[] newArray = new string[originalArray.Length];
         int count = 0;
-    }
+        foreach (string str in originalArray)
+        {
+            if (str.Length <= 3)
+            {
+                newArray[count] = str;
+                count++;
+            }
+        }
+
+        }
 }
