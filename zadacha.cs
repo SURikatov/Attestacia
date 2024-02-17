@@ -18,5 +18,12 @@ class Program
         }
         string[] finalArray = new string[count];
         Array.Copy(newArray, finalArray, count);
+
+        Console.WriteLine("Исходный массив:");
+        Console.WriteLine("[" + string.Join(", ", originalArray) + "]");
+        Console.WriteLine("Новый массив (строки длиной не более 3 символов):");
+        Console.WriteLine("[" + string.Join(", ", finalArray) + "]");
+
+        Console.ReadLine();
     }
 }
