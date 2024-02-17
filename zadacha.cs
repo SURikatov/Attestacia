@@ -16,6 +16,7 @@ class Program
                 count++;
             }
         }
-
-        }
+        string[] finalArray = new string[count];
+        Array.Copy(newArray, finalArray, count);
+    }
 }
